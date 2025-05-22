@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Alice",
+    "text": "Welcome to our story!",
+    "character": "res://characters/alice.png",
+    "background": "res://backgrounds/forest.png"
+  },
+  {
+    "name": "Bob",
+    "text": "Let's begin the adventure.",
+    "character": "res://characters/bob.png",
+    "background": "res://backgrounds/forest.png"
+  }
+]

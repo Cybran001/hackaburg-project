@@ -10,11 +10,25 @@ anchors_preset = 0
 offset_right = 557.0
 offset_bottom = 388.0
 
-[node name="Label" type="Label" parent="Control"]
+[node name="Label" type="Label" parent="Control" node_paths=PackedStringArray("character_sprite", "background_sprite")]
 layout_mode = 0
 offset_right = 941.0
 offset_bottom = 537.0
 mouse_filter = 0
 script = ExtResource("1_wtcfe")
+character_sprite = NodePath("../CharacterSprite")
+background_sprite = NodePath("../Background")
+
+[node name="Background" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="CharacterSprite" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
 
 [connection signal="gui_input" from="Control/Label" to="Control/Label" method="_on_gui_input"]
