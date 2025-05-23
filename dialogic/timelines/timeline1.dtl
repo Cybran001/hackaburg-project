@@ -1,8 +1,10 @@
 <Shop request>
 - What enemy?
 	<Answer>
+	jump 
 - What environment?
 	<Answer>
+	jump 
 - What's your strategy?
 	<Answer>
 	jump 
