@@ -8,10 +8,10 @@ adventurer: So now, merchant. Tell me\: what do I need?
 	adventurer: A goblin.
 	jump question_loop
 - What environment?
-	<Answer>
+	adventurer: <Answer>
 	jump question_loop
 - What's your strategy?
-	<Answer>
+	adventurer: <Answer>
 	jump question_loop
 - I have something for you....
 Thank you!
