@@ -1,5 +1,7 @@
 extends Control
 
+func _ready() -> void:
+	$AudioStreamPlayer.play()
 
 func _on_available_items_list_item_selected(index: int) -> void:
 	var selected_item_name = $AvailableItemsList.get_item_text(index)
