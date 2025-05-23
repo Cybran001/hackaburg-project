@@ -21,3 +21,11 @@ func _on_selected_items_list_item_selected(index: int) -> void:
 	Global.remove_item_from_itemlist($SelectedItemsList, index)
 	Global.add_item_to_itemlist($AvailableItemsList, selected_item)
 	Global.money_counter += selected_item.item_value
+
+
+func _on_button_pressed() -> void:
+	for i in range(2, $SelectedItemsList.item_count, 2):
+		var item_text = $SelectedItemsList.get_item_text(i)
+		Global.current_inventory.append(Global.available_items[item_text])
+
+	get_tree().change_scene_to_file("res://Cutscene1.tscn")
