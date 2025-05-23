@@ -15,7 +15,7 @@ func fade_in_character(character):
 	tween.tween_property(character, "modulate:a", 1.0, 1.5)
 
 func _on_timeline1_end():
-	get_tree().change_scene_to_file("res://Cutscene2.tscn")
+	get_tree().change_scene_to_file("res://Endscreen.tscn")
 	#fade_in_character(char2)
 	pass
 	#Dialogic.start("Timeline2")  # replace with your actual second timeline
