@@ -6,8 +6,6 @@ extends Control
 func _ready():
 	fade_in_character(char1)
 	Dialogic.start("timeline1")  # replace with your actual timeline name
-	Global.money_counter += 1;
-	Global.reputation_counter += 10;
 	Dialogic.timeline_ended.connect(_on_timeline1_end)
 
 func fade_in_character(character):
