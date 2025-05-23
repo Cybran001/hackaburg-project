@@ -1,9 +1,18 @@
 extends Control
 
-@onready var char1 = $Alice
+@onready var adventurer = $Adventurer
+@onready var rogue = $Rogue
+@onready var barbarian = $Barbarian
+@onready var necromancer = $Necromancer
+@onready var orc = $Orc
+@onready var king = $King
+@onready var cleric = $Cleric
+
+var chars = []
 
 
 func _ready():
+	chars = [adventurer, rogue, barbarian, adventurer, necromancer, orc, adventurer, king, cleric]
 	$AudioStreamPlayer.play()
 	Dialogic.signal_event.connect(_on_dialogic_signal_event)
 	play_next_timeline()
@@ -11,14 +20,14 @@ func _ready():
 	#Dialogic.timeline_ended.connect(_on_timeline1_end)
 	
 func play_next_timeline():
-	Global.fade_in(char1)
+	Global.fade_in(chars[Global.timeline_counter])
 	Dialogic.start(Global.timeline_stack.pop_front())  # replace with your actual timeline name
 
 	Dialogic.timeline_ended.connect(_on_timeline_end)
 
 
 func _on_timeline_end():
-	await Global.fade_out(char1).finished
+	await Global.fade_out(chars[Global.timeline_counter]).finished
 	# todo start next timeline here
 	Global.timeline_counter += 1
 	var target_properties = Global.property_stack.pop_front()

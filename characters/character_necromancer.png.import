@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bar3cb2574k2h"
-path="res://.godot/imported/character_02_big.png-2eacd1a873e17c05874f0a1294a27d4e.ctex"
+uid="uid://dwiiipdbkqaiq"
+path="res://.godot/imported/character_necromancer.png-bd00c818beb19a7170dde603b2182894.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/character_02_big.png"
-dest_files=["res://.godot/imported/character_02_big.png-2eacd1a873e17c05874f0a1294a27d4e.ctex"]
+source_file="res://characters/character_necromancer.png"
+dest_files=["res://.godot/imported/character_necromancer.png-bd00c818beb19a7170dde603b2182894.ctex"]
 
 [params]
 

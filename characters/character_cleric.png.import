@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bar3cb2574k2h"
-path="res://.godot/imported/character_02_big.png-2eacd1a873e17c05874f0a1294a27d4e.ctex"
+uid="uid://dwwadv2hhirfa"
+path="res://.godot/imported/character_cleric.png-018dd0b58857a5452c05b061ce9e8dfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/character_02_big.png"
-dest_files=["res://.godot/imported/character_02_big.png-2eacd1a873e17c05874f0a1294a27d4e.ctex"]
+source_file="res://characters/character_cleric.png"
+dest_files=["res://.godot/imported/character_cleric.png-018dd0b58857a5452c05b061ce9e8dfd.ctex"]
 
 [params]
 

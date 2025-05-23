@@ -1,13 +1,19 @@
-[gd_scene load_steps=9 format=3 uid="uid://cybkb4nsh4htf"]
+[gd_scene load_steps=15 format=3 uid="uid://cybkb4nsh4htf"]
 
 [ext_resource type="Script" uid="uid://q0t33lbsje0y" path="res://cutscene_1.gd" id="1_qesu1"]
 [ext_resource type="Texture2D" uid="uid://8kgmokep8715" path="res://placeholder/background.png" id="2_qesu1"]
-[ext_resource type="Texture2D" uid="uid://bv36gdh0tehu0" path="res://characters/character_01_big.png" id="3_qesu1"]
+[ext_resource type="Texture2D" uid="uid://b800eg0n8q5dg" path="res://characters/character_adventurer.png" id="3_wph3m"]
+[ext_resource type="Texture2D" uid="uid://c124ypq8bvm0g" path="res://characters/character_rogue.png" id="4_drk4f"]
 [ext_resource type="Texture2D" uid="uid://bjbrgaxkls50b" path="res://placeholder/counter_big.png" id="4_ne81x"]
+[ext_resource type="Texture2D" uid="uid://djuk23776u0fk" path="res://characters/character_barbarian.png" id="5_4v6y5"]
 [ext_resource type="AudioStream" uid="uid://cut0mpydhik1j" path="res://music/gwent_ost.mp3" id="5_51aja"]
-[ext_resource type="Script" uid="uid://dtft1jpo28xjx" path="res://sell_available_items_list.gd" id="6_kobdc"]
-[ext_resource type="Script" uid="uid://cypf3s4d34ljm" path="res://sell_customer_items_list.gd" id="7_qcc5b"]
+[ext_resource type="Script" path="res://sell_available_items_list.gd" id="6_kobdc"]
+[ext_resource type="Texture2D" uid="uid://dwiiipdbkqaiq" path="res://characters/character_necromancer.png" id="6_nojcw"]
+[ext_resource type="Script" path="res://sell_customer_items_list.gd" id="7_qcc5b"]
+[ext_resource type="Texture2D" uid="uid://bg1l7e4h4rcdt" path="res://characters/character_orc.png" id="7_tksht"]
+[ext_resource type="Texture2D" uid="uid://dbtnk8jtj23fs" path="res://characters/character_king.png" id="8_h1slj"]
 [ext_resource type="FontFile" uid="uid://vkt2hpimy12h" path="res://fonts/Seagram tfb.ttf" id="8_yf6ad"]
+[ext_resource type="Texture2D" uid="uid://dwwadv2hhirfa" path="res://characters/character_cleric.png" id="9_yipcu"]
 
 [node name="Cutscene1" type="Control"]
 layout_mode = 3
@@ -28,7 +34,7 @@ grow_vertical = 2
 texture = ExtResource("2_qesu1")
 expand_mode = 3
 
-[node name="Alice" type="TextureRect" parent="."]
+[node name="Adventurer" type="TextureRect" parent="."]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -36,7 +42,73 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_qesu1")
+texture = ExtResource("3_wph3m")
+expand_mode = 1
+
+[node name="Rogue" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_drk4f")
+expand_mode = 1
+
+[node name="Barbarian" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_4v6y5")
+expand_mode = 1
+
+[node name="Necromancer" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_nojcw")
+expand_mode = 1
+
+[node name="Orc" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_tksht")
+expand_mode = 1
+
+[node name="King" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_h1slj")
+expand_mode = 1
+
+[node name="Cleric" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_yipcu")
 expand_mode = 1
 
 [node name="Counter" type="TextureRect" parent="."]
