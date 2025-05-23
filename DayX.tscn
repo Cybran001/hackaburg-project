@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwfhobhj8wort"]
+[gd_scene load_steps=4 format=3 uid="uid://dwfhobhj8wort"]
 
-[ext_resource type="Script" uid="uid://b43v66vyavdpl" path="res://day_x.gd" id="1_wxnj6"]
+[ext_resource type="Script" path="res://day_x.gd" id="1_wxnj6"]
 [ext_resource type="Texture2D" uid="uid://cru7yke7ldrb0" path="res://placeholder/background_black.png" id="2_eawpq"]
+[ext_resource type="FontFile" uid="uid://vkt2hpimy12h" path="res://fonts/Seagram tfb.ttf" id="3_b0ru2"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -29,6 +30,8 @@ offset_top = 150.0
 offset_right = 40.5
 offset_bottom = 173.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_b0ru2")
+theme_override_font_sizes/font_size = 100
 text = "Day X"
 horizontal_alignment = 1
 vertical_alignment = 1
