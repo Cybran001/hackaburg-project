@@ -1,6 +1,6 @@
 extends Node
 
-var money_counter: int = 0
+var money_counter: int = 100
 var reputation_counter: int = 0
 # as an example, we initialize the current_inventory with all items
 var current_inventory: Array[Item] = parse_item_list("res://items/items_list.json")
