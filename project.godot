@@ -57,6 +57,12 @@ animations/leave_default_wait=true
 animations/cross_fade_default_length=0.5
 text/autopauses={}
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=2
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")

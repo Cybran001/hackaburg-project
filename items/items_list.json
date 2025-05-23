@@ -2,21 +2,25 @@
 	{
 		"Name": "Axe",
 		"Texture": "axe.png",
-		"Value": 5
+		"Value": 5,
+		"Properties": ["heavy" , "melee"]
 	},
 	{
 		"Name": "Green Potion",
 		"Texture": "green-potion.png",
-		"Value": 7
+		"Value": 7,
+		"Properties": ["stamina", "magic"]
 	},
 	{
 		"Name": "Purple Potion",
 		"Texture": "purple-potion.png",
-		"Value": 4
+		"Value": 4,
+		"Properties": ["health", "magic"]
 	},
 	{
 		"Name": "spellbook",
 		"Texture": "spellbook.png",
-		"Value": 10
+		"Value": 10,
+		"Properties": ["magic", "damage"]
 	}
 ]
