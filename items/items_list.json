@@ -14,7 +14,7 @@
 		"Texture": "red-potion.png",
 		"Value": 8,
 		"Properties": [
-			"stamina",
+			"health",
 			"magic"
 		]
 	},
@@ -23,7 +23,7 @@
 		"Texture": "blue-potion.png",
 		"Value": 5,
 		"Properties": [
-			"stamina",
+			"mana",
 			"magic"
 		]
 	},
