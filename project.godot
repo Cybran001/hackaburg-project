@@ -25,6 +25,7 @@ Counter="*res://Counter.tscn"
 
 directories/dch_directory={
 "adventurer": "res://dialogic/timelines/dialogic_theme/adventurer.dch",
+"barbarian": "res://barbarian.dch",
 "rogue": "res://dialogic/timelines/dialogic_theme/rogue.dch"
 }
 directories/dtl_directory={
