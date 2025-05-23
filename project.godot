@@ -30,6 +30,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "adventurer_timeline2": "res://adventurer_timeline2.dtl",
+"barbarian_timeline": "res://barbarian_timeline.dtl",
 "rogue_timeline": "res://dialogic/timelines/dialogic_theme/rogue_timeline.dtl",
 "timeline1": "res://dialogic/timelines/timeline1.dtl"
 }
