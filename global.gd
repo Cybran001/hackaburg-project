@@ -2,6 +2,7 @@ extends Node
 
 var money_counter: int = 100
 var reputation_counter: int = 0
+var day = 0
 # as an example, we initialize the current_inventory with all items
 var current_inventory: Array[Item] = parse_item_list("res://items/items_list.json")
 var available_items: Dictionary[String, Item] = _convert_item_list_to_dict(parse_item_list("res://items/items_list.json"))
@@ -52,3 +53,7 @@ func _load_items_from_json(path: String):
 			push_error("Failed to parse JSON dialogue file: " + path)
 	else:
 		push_error("Failed to open dialogue file: " + path)
+
+func fade_in(object):
+	var tween = create_tween()
+	tween.tween_property(object, "modulate:a", 1.0, 1.5)
