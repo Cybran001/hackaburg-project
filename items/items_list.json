@@ -1,0 +1,22 @@
+[
+	{
+		"Name": "Axe",
+		"Texture": "axe.png",
+		"Value": 5
+	},
+	{
+		"Name": "Green Potion",
+		"Texture": "green-potion.png",
+		"Value": 7
+	},
+	{
+		"Name": "Purple Potion",
+		"Texture": "purple-potion.png",
+		"Value": 4
+	},
+	{
+		"Name": "spellbook",
+		"Texture": "spellbook.png",
+		"Value": 10
+	}
+]

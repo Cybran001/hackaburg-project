@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxf5g8f20kxp2"]
+[gd_scene load_steps=3 format=3 uid="uid://dxf5g8f20kxp2"]
 
 [ext_resource type="Script" uid="uid://bx8sm8yr46ji8" path="res://startscreen.gd" id="1_8hh42"]
+[ext_resource type="Script" uid="uid://cflep3dj4tv00" path="res://inventorylist.gd" id="2_nrfbx"]
 
 [node name="Startscreen" type="Control"]
 layout_mode = 3
@@ -10,6 +11,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8hh42")
+
+[node name="InventoryList" type="ItemList" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+auto_width = true
+auto_height = true
+max_columns = 2
+same_column_width = true
+script = ExtResource("2_nrfbx")
 
 [node name="TitleLabel" type="Label" parent="."]
 layout_mode = 0
