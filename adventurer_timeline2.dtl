@@ -4,7 +4,8 @@ I must ask for your service once more. You must help me, for this is only the be
 label question_loop
 adventurer: I beseech thee, armourer\: equip me!
 - Aaalright, what enemy?
-	adventurer: You haven't noticed the creeping cold? Temperatures have been sinking, even though we are in mid summer season. There has been a sighting of a Yeti. It's on the march on this village. The crops are freezing, the people are in fear. This is the perfect opportunity.
+	adventurer: You haven't noticed the creeping cold? Temperatures have been sinking, even though we are in mid summer season.
+	adventurer: There has been a sighting of a Yeti. It's on the march on this village. The crops are freezing, the people are in fear. This is the perfect opportunity.
 	adventurer: I need to slay this Yeti. I can save the crops, can save this harvest, can save the people. This is bigger than my honor. But still mostly about my honor... I can slay the Yeti, but I cannot do it like this. This blade will not cut through Yeti skin.
 	jump question_loop
 - What environment?
