@@ -11,8 +11,13 @@ func _ready():
 
 
 func _on_timeline1_end():
-	get_tree().change_scene_to_file("res://Endscreen.tscn")
-
+	# todo start next timeline here
+	
+	# if day has ended:
+	if Global.day == Global.lastDay:
+		get_tree().change_scene_to_file("res://Endscreen.tscn")
+	else:
+		get_tree().change_scene_to_file("res://DayX.tscn")
 
 func _on_dialogic_signal_event(signal_name: String):
 	match signal_name:
