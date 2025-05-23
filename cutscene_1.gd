@@ -17,6 +17,7 @@ func play_next_timeline():
 
 
 func _on_timeline_end():
+	await Global.fade_out(char1).finished
 	# todo start next timeline here
 	Global.timeline_counter += 1
 	# if day has ended:
