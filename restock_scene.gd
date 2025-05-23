@@ -26,6 +26,7 @@ func _on_selected_items_list_item_selected(index: int) -> void:
 
 
 func _on_button_pressed() -> void:
+	Global.current_inventory.clear()
 	for i in range(2, $SelectedItemsList.item_count, 2):
 		var item_text = $SelectedItemsList.get_item_text(i)
 		Global.current_inventory.append(Global.available_items[item_text])
