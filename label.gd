@@ -43,6 +43,7 @@ func _gui_input(event: InputEvent) -> void:
 func _show_next():
 	if dialogue_index >= dialogue.size():
 		print("End of dialogue.")
+		Dialogic.start("timeline1")
 		return
 	current_entry = dialogue[dialogue_index]
 	dialogue_index += 1
