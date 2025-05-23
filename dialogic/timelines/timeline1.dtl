@@ -14,4 +14,5 @@ adventurer: So now, merchant. Tell me\: what do I need?
 	adventurer: <Answer>
 	jump question_loop
 - I have something for you....
-Thank you!
+jump 
+adventurer: Thank you!
