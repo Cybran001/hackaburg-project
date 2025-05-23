@@ -13,12 +13,15 @@ func _ready():
 func play_next_timeline():
 	Global.fade_in(char1)
 	Dialogic.start(Global.timeline_stack.pop_front())  # replace with your actual timeline name
+
 	Dialogic.timeline_ended.connect(_on_timeline_end)
 
 
 func _on_timeline_end():
 	# todo start next timeline here
 	Global.timeline_counter += 1
+	var target_properties = Global.property_stack.pop_front()
+	print(target_properties)
 	# if day has ended:
 	#if Global.day == Global.lastDay:
 	if Global.day == Global.lastDay && (Global.timeline_counter%3) == 0:
