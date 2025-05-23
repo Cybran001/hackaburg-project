@@ -1,23 +1,23 @@
 necromancer: Hello, simpleton peasant. Is this where I can equip?
 necromancer: Arm myself? Prepare for battle?
-barbarian: I'm not looking for any of your brutish death-tools. I need something refined.
-barbarian: I am from the temple up north. Someone stole something... precious to me. Something I need to control some footfolk, a few loyal servants of mine. To secure their undying loyalty.
-barbarian: Nothing too morally indefensible, but something to keep a large group of people in check.
-In any case, it's gone now. No use crying over lost, priceless, invaluable and rare artifacts. What's done is done. If only I could get a hand on the scoundrel who did it...
-necromancer: Well, well, well. I still need to finish a certain ritual of mine and that I cannot do with rogue, unionizing minions. 
+necromancer: I'm not looking for any of your brutish death-tools. I need something refined.
+necromancer: I am from the temple up north. Someone stole something... precious to me. Something I need to control some footfolk, a few loyal servants of mine. To secure their undying loyalty.
+necromancer: Nothing too morally indefensible, but something to keep a large group of people in check.
+necromancer: In any case, it's gone now. No use crying over lost, priceless, invaluable and rare artifacts. What's done is done. If only I could get a hand on the scoundrel who did it...
+necromancer: Well, well, well. I still need to finish a certain ritual of mine and that I cannot do with rogue, unionizing minions.
 label question_loop
-barbarian: Can you give me something? Something to... nudge people's behaviour in the direction of my wishes?
+necromancer: Can you give me something? Something to... nudge people's behaviour in the direction of my wishes?
 - What do you want to do?
-	barbarian: Finish a ritual that I started. If I cannot finish it, well...
-	barbarian: Let's just say my soul is forfeit. And that is to be avoided.
-	barbarian: My minions won't listen to my command, so I need something to keep them in check again. After all, I need compliant people to help me achieve what I need.
+	necromancer: Finish a ritual that I started. If I cannot finish it, well...
+	necromancer: Let's just say my soul is forfeit. And that is to be avoided.
+	necromancer: My minions won't listen to my command, so I need something to keep them in check again. After all, I need compliant people to help me achieve what I need.
 	jump question_loop
 - What environment?
-	barbarian: In my temple. Under the eyes of god, of course. Everything I do is for the better good.
+	necromancer: In my temple. Under the eyes of god, of course. Everything I do is for the better good.
 	jump question_loop
 - What's your strategy?
-	barbarian: As of now, I can keep them in check with some witty argumentation, carefully crafted lies and empty promises.
-	barbarian: But people will be going rogue once they realize just how empty these promises are.
+	necromancer: As of now, I can keep them in check with some witty argumentation, carefully crafted lies and empty promises.
+	necromancer: But people will be going rogue once they realize just how empty these promises are.
 	jump question_loop
 - I have something for you....
-barbarian: Thank you. I hope this will help
+necromancer: Thank you. I hope this will help
