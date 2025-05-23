@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dxf5g8f20kxp2"]
 
 [ext_resource type="Script" uid="uid://bx8sm8yr46ji8" path="res://startscreen.gd" id="1_8hh42"]
-[ext_resource type="Script" uid="uid://cflep3dj4tv00" path="res://inventorylist.gd" id="2_nrfbx"]
+[ext_resource type="Script" path="res://inventorylist.gd" id="2_nrfbx"]
 
 [node name="Startscreen" type="Control"]
 layout_mode = 3

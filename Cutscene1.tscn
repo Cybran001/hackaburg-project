@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cybkb4nsh4htf"]
 
 [ext_resource type="Script" uid="uid://q0t33lbsje0y" path="res://cutscene_1.gd" id="1_qesu1"]
-[ext_resource type="Texture2D" uid="uid://cwbiadrux31ka" path="res://placeholder/background.png" id="2_qesu1"]
-[ext_resource type="Texture2D" uid="uid://bmuf2l2iff53w" path="res://characters/character_01_big.png" id="3_qesu1"]
-[ext_resource type="Texture2D" uid="uid://blgg665q3olbh" path="res://placeholder/counter_big.png" id="4_ne81x"]
+[ext_resource type="Texture2D" uid="uid://8kgmokep8715" path="res://placeholder/background.png" id="2_qesu1"]
+[ext_resource type="Texture2D" uid="uid://bv36gdh0tehu0" path="res://characters/character_01_big.png" id="3_qesu1"]
+[ext_resource type="Texture2D" uid="uid://bjbrgaxkls50b" path="res://placeholder/counter_big.png" id="4_ne81x"]
 
 [node name="Cutscene1" type="Control"]
 layout_mode = 3
