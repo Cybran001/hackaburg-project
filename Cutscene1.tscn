@@ -23,6 +23,7 @@ texture = ExtResource("2_qesu1")
 expand_mode = 3
 
 [node name="Alice" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 3.0
 offset_top = 1.0

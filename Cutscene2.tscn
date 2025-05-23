@@ -20,6 +20,7 @@ offset_bottom = 40.0
 texture = ExtResource("2_tf0nm")
 
 [node name="Bob" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
