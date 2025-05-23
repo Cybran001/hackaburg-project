@@ -5,20 +5,20 @@ barbarian: I am stronger.
 barbarian: I would like to let my fists speak, but they say a fist fight is not SERIOUS enough.
 barbarian: They fight with axes. I don't care what I fight with, but I need something. Give it to me.
 label question_loop
-barbarian: I can beat him. Just give  me something.
+barbarian: I can win this. Just give  me something.
 - Who do you want to fight?
 	barbarian: The orc chief.
-	barbarian: Big, muscly guy. Or girl. I don't really know how to tell them apart. In any case, they're strong. All of them
+	barbarian: Big, muscly guy. Or girl. I don't really know how to tell them apart. In any case, they're strong. All of them.
 	barbarian: And arrogant. Look down on humans.
-	I just want to smash all of these smug bastards to pieces, but I don't need to. I just need to defeat the chief. They must recognize strenght when demonstrated against their strongest. It's in their culture.
-	barbarian: I need to teach them a lesson. Otherwise, they will never stop harassing our people.
+	I just want to smash all of these smug bastards to pieces, but I don't need to. I just need to defeat the chief. They must recognize strenght when demonstrated against their strongest. They cannot ignore power when it rearranges their leaders' face. It's in their culture.
+	barbarian: I need to teach them a lesson. Otherwise, they will never stop looking down on our people. High trading prices, the ridicule. I cannot take it anymore.
 	jump question_loop
 - What environment?
 	barbarian: They have this fighting pit in their village.
 	barbarian: This is where we'll face off against each other.
 	jump question_loop
 - What's your strategy?
-	barbarian: Pure strenght, ideally. I must use a weapon since the village insists on one, but I am inexperienced with weapons.
+	barbarian: Pure strenght, ideally. It's all I've ever known. I must use a weapon since the village insists on one, but I am inexperienced with weapons.
 	barbarian: It should be an extension of my strenght, of my brute force. Something I can wield, not too hard to master, not too hard to think about. Just something to qualify me.
 	jump question_loop
 - I have something for you....
