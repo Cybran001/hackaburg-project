@@ -57,3 +57,9 @@ func _load_items_from_json(path: String):
 func fade_in(object):
 	var tween = create_tween()
 	tween.tween_property(object, "modulate:a", 1.0, 1.5)
+	return tween
+
+func fade_out(object):
+	var tween = create_tween()
+	tween.tween_property(object, "modulate:a", 0.0, 1.5)
+	return tween

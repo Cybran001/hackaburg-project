@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwfhobhj8wort"]
+
+[ext_resource type="Script" uid="uid://b43v66vyavdpl" path="res://day_x.gd" id="1_wxnj6"]
+[ext_resource type="Texture2D" uid="uid://cru7yke7ldrb0" path="res://placeholder/background_black.png" id="2_eawpq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wxnj6")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 2970.0
+offset_bottom = 1980.0
+texture = ExtResource("2_eawpq")
+
+[node name="DayX" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -40.5
+offset_top = 150.0
+offset_right = 40.5
+offset_bottom = 173.0
+grow_horizontal = 2
+text = "Day X"
+horizontal_alignment = 1
+vertical_alignment = 1
