@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Godot-Test"
-run/main_scene="res://node_2d.tscn"
+run/main_scene="uid://dxf5g8f20kxp2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -22,7 +22,9 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={}
-directories/dtl_directory={}
+directories/dtl_directory={
+"timeline1": "res://dialogic/timelines/timeline1.dtl"
+}
 
 [editor_plugins]
 

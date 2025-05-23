@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxf5g8f20kxp2"]
+
+[ext_resource type="Script" uid="uid://bx8sm8yr46ji8" path="res://startscreen.gd" id="1_8hh42"]
+
+[node name="Startscreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8hh42")
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 164.0
+offset_right = 976.0
+offset_bottom = 336.0
+text = "This is our game"
+
+[node name="Startbutton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 386.0
+offset_right = 616.0
+offset_bottom = 441.0
+text = "Start Game"
+
+[connection signal="pressed" from="Startbutton" to="." method="_on_startbutton_pressed"]
