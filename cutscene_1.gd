@@ -25,6 +25,7 @@ func _on_dialogic_signal_event(signal_name: String):
 		"sell_gear":
 			Dialogic.paused = true
 			print("Selling gear...")
-			await get_tree().create_timer(5.0).timeout
+			await get_tree().create_timer(3.0).timeout
+			# todo sell stuff here
 			print("Sold gear!!!")
 			Dialogic.paused = false
