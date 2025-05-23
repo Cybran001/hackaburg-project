@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Godot-Test"
+config/name="Gear4Fear"
 run/main_scene="uid://dxf5g8f20kxp2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
