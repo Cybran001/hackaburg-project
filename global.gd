@@ -4,6 +4,8 @@ var money_counter: int = 100
 var reputation_counter: int = 0
 var day = 0
 var lastDay = 3
+var timeline_stack = ["timeline1", "rogue_timeline", "barbarian_timeline", "timeline1", "rogue_timeline", "barbarian_timeline", "timeline1", "rogue_timeline", "barbarian_timeline"]
+var timeline_counter = 0
 # as an example, we initialize the current_inventory with all items
 var current_inventory: Array[Item] = parse_item_list("res://items/items_list.json")
 var available_items: Dictionary[String, Item] = _convert_item_list_to_dict(parse_item_list("res://items/items_list.json"))
