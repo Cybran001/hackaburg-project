@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt1h5frgoh48f"]
+
+[ext_resource type="Texture2D" uid="uid://dkk1rc7iypojl" path="res://backgrounds/forest.png" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Forest" type="Sprite2D" parent="."]
+position = Vector2(639, 274)
+scale = Vector2(0.722, 0.911552)
+texture = ExtResource("1_ig7tw")
