@@ -4,6 +4,7 @@ extends Control
 
 func _ready():
 	Global.fade_in(char1)
+	$AudioStreamPlayer.play()
 	Dialogic.signal_event.connect(_on_dialogic_signal_event)
 	Dialogic.start("timeline1")  # replace with your actual timeline name
 	Dialogic.timeline_ended.connect(_on_timeline1_end)
