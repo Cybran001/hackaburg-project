@@ -28,6 +28,7 @@ directories/dch_directory={
 "rogue": "res://dialogic/timelines/dialogic_theme/rogue.dch"
 }
 directories/dtl_directory={
+"adventurer_timeline2": "res://adventurer_timeline2.dtl",
 "rogue_timeline": "res://dialogic/timelines/dialogic_theme/rogue_timeline.dtl",
 "timeline1": "res://dialogic/timelines/timeline1.dtl"
 }
