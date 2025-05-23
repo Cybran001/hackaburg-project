@@ -1,4 +1,3 @@
-set {target_properties} = ["damage", "melee"]
 adventurer: Greetings, humble merchant. I am <inaudible>, the adventurer. Very pleased to make your aquaintance!
 adventurer: I have heard from far and beyond of your expertise, of your ability to handpick the most perfectly tailored weapon to make even the biggest dunderhead a formidable foe.
 adventurer: I have come here to start my journey. I dream of making it big, so you would do well to remember my name, merchant! For I am <inaudible screeching> and I have come here to slay foes.
