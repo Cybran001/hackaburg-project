@@ -10,6 +10,7 @@ func _ready():
 	Dialogic.start("timeline2")  # Replace with your first timeline name
 
 	Global.money_counter += 1;
+	Global.reputation_counter += 10;
 	# Wait for it to finish
 	Dialogic.timeline_ended.connect(_on_timeline2_end)
 
