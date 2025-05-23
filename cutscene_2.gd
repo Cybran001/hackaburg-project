@@ -19,6 +19,7 @@ func fade_in_character(character: TextureRect):
 
 func _on_timeline2_end():
 	print(Global.money_counter)
+	get_tree().quit()
 	pass
 	# Disconnect to avoid duplicate triggers
 	# Dialogic.timeline_ended.disconnect(_on_timeline1_end)
