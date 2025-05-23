@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cybkb4nsh4htf"]
 
 [ext_resource type="Script" uid="uid://q0t33lbsje0y" path="res://cutscene_1.gd" id="1_qesu1"]
-[ext_resource type="Texture2D" uid="uid://dkk1rc7iypojl" path="res://backgrounds/forest.png" id="1_s7t10"]
-[ext_resource type="Texture2D" uid="uid://bvsdt5gxhyini" path="res://characters/alice.png" id="2_p1uvs"]
+[ext_resource type="Texture2D" uid="uid://cwbiadrux31ka" path="res://placeholder/background.png" id="2_qesu1"]
+[ext_resource type="Texture2D" uid="uid://bmuf2l2iff53w" path="res://characters/character_01_big.png" id="3_qesu1"]
 
 [node name="Cutscene1" type="Control"]
 layout_mode = 3
@@ -17,10 +17,10 @@ script = ExtResource("1_qesu1")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1_s7t10")
+texture = ExtResource("2_qesu1")
 
 [node name="Alice" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 444.0
 offset_bottom = 800.0
-texture = ExtResource("2_p1uvs")
+texture = ExtResource("3_qesu1")
