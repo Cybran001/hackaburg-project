@@ -6,13 +6,20 @@ adventurer: So now, merchant. Tell me\: what do I need?
 - Aaalright, what enemy?
 	adventurer: The most degenerate, terrific creature of them all.
 	adventurer: A goblin.
+	adventurer: Not just one, but many. Many goblins. They have been sighted creeping around the sewers. I am to exterminate them.
+	adventurer: It will boost my honor.
 	jump question_loop
 - What environment?
-	adventurer: <Answer>
+	adventurer: It'll be in the dirty sewers. I think It will be dark. And goblins are illusive little critters, hard to get ahold of. 
+	If you have something for me to limit their movement and keep them from ganking up on me, I think that would be most beneficial.
 	jump question_loop
 - What's your strategy?
-	adventurer: <Answer>
+	adventurer: Let's keep this between us, but...
+	adventurer: I am still a bit... inexperienced.
+	adventurer: I mean, that is all still subject to change. Like I said, all of our country will soon know the name of <incomprehensible groaning>. MY name. 
+	adventurer: But as of now, no one knows it yet. Let's just say I need something to make me look heroic but not too stupid while fighting with it. It needs to look elegant, fierce, determined.
+	adventurer: Do you know, what I mean?
 	jump question_loop
 - I have something for you.... | [=""]
 	[signal arg="sell_gear"]
-adventurer: Thank you!
+adventurer: Thank you! This fight will be glorious.
