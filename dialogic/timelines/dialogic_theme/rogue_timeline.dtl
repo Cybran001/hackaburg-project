@@ -1,0 +1,18 @@
+rogue: ...
+rogue: PSSShHH, Pssh, pshsshshhhhh... Don't let them hear you. You're waaay too loud, okay? No one can know I am here, okay? I need you to be professional.
+label question_loop
+rogue: I need you to get me some equipment, okay? I don't have a lot of time.
+Just... just give me something. Discreetly. Make it quick!
+- Aaalright, what enemy?
+	rogue: The most degenerate, terrific creature of them all.
+	rogue: A goblin.
+	jump question_loop
+- What environment?
+	rogue: <Answer>
+	jump question_loop
+- What's your strategy?
+	rogue: <Answer>
+	jump question_loop
+- I have something for you....
+jump question_loop
+rogue: Thank you!
