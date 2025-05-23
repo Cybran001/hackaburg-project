@@ -13,5 +13,6 @@ adventurer: So now, merchant. Tell me\: what do I need?
 - What's your strategy?
 	adventurer: <Answer>
 	jump question_loop
-- I have something for you....
+- I have something for you.... | [=""]
+	[signal arg="sell_gear"]
 adventurer: Thank you!
