@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxf5g8f20kxp2"]
+[gd_scene load_steps=5 format=3 uid="uid://dxf5g8f20kxp2"]
 
 [ext_resource type="Script" uid="uid://bx8sm8yr46ji8" path="res://startscreen.gd" id="1_8hh42"]
-[ext_resource type="Script" uid="uid://cflep3dj4tv00" path="res://inventorylist.gd" id="2_nrfbx"]
 [ext_resource type="Texture2D" uid="uid://8kgmokep8715" path="res://placeholder/background.png" id="3_1yvcn"]
 [ext_resource type="Texture2D" uid="uid://bjbrgaxkls50b" path="res://placeholder/counter_big.png" id="4_x6rvy"]
 [ext_resource type="FontFile" uid="uid://vkt2hpimy12h" path="res://fonts/Seagram tfb.ttf" id="5_x6rvy"]
@@ -34,21 +33,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_x6rvy")
 expand_mode = 2
-
-[node name="InventoryList" type="ItemList" parent="."]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -4.0
-offset_right = 8.0
-offset_bottom = 4.0
-grow_vertical = 2
-auto_width = true
-auto_height = true
-max_columns = 2
-same_column_width = true
-script = ExtResource("2_nrfbx")
 
 [node name="TitleLabel" type="Label" parent="."]
 layout_mode = 1
@@ -83,5 +67,4 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Start Game"
 
-[connection signal="item_clicked" from="InventoryList" to="InventoryList" method="_on_item_clicked"]
 [connection signal="pressed" from="Startbutton" to="." method="_on_startbutton_pressed"]
