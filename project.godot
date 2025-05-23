@@ -26,6 +26,7 @@ Counter="*res://Counter.tscn"
 directories/dch_directory={
 "adventurer": "res://dialogic/timelines/dialogic_theme/adventurer.dch",
 "barbarian": "res://barbarian.dch",
+"cleric": "res://cleric.dch",
 "king": "res://king.dch",
 "necromancer": "res://necromancer.dch",
 "orc": "res://orc.dch",
@@ -33,7 +34,9 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "adventurer_timeline2": "res://adventurer_timeline2.dtl",
+"adventurer_timeline3": "res://adventurer_timeline3.dtl",
 "barbarian_timeline": "res://barbarian_timeline.dtl",
+"cleric_timeline": "res://cleric_timeline.dtl",
 "king_timeline": "res://king_timeline.dtl",
 "necromancer_timeline": "res://necromancer_timeline.dtl",
 "orc_timeline": "res://orc_timeline.dtl",

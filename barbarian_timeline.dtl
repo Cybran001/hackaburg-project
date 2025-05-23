@@ -22,6 +22,7 @@ barbarian: I can win this. Just give  me something.
 	barbarian: It should be an extension of my strenght, of my brute force. Something I can wield, not too hard to master, not too hard to think about. Just something to qualify me.
 	jump question_loop
 - I have something for you....
+	[signal arg="sell_gear"]
 barbarian: Thanks. This will suffice.
 barbarian: I can't wait to revel in the defeat in their eyes. Have faith in me.
 barbarian: Farewell, merchant.

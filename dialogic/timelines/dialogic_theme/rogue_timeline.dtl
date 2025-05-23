@@ -19,5 +19,6 @@ Just... just give me something. Discreetly. Make it quick!
 	rogue: I may not have the highest morals, but if must be, I would like to avoid any spilled blood. I don't particularly count monchs and paladins as my closest friends, but I'd hate to see them hurt unnecessarily. Their suffering is not my goal.
 	jump question_loop
 - I have something for you....
+	[signal arg="sell_gear"]
 rogue: Took you long enough. And if you ever tell a single soul about this, trust me\: I will know. And you'd do better to sleep with someone to watch over you if that were the case.
 rogue: ... Thank you.

@@ -22,4 +22,5 @@ barbarian: Give me something to beat the barbaric, before I take my revenge out 
 	orc: But now I believe, it is a matter of the mind, as well. I need to use my smarts, but I don't know how.
 	jump question_loop
 - I have something for you....
+	[signal arg="sell_gear"]
 barbarian: Thank you, you little twerp! If you still live tomorrow, you will know it worked.

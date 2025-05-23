@@ -1,4 +1,3 @@
-adventurer: Greetings, Merchant! I have returned victorious.
 adventurer: You should have seen me, for tis was a fierce fight. But these goblins got what they deserved! For glory, for honor.
 I must ask for your service once more. You must help me, for this is only the beginning of my saga. Everyone starts humble, but I am ready for my next fight.
 label question_loop
@@ -18,3 +17,4 @@ adventurer: I beseech thee, armourer\: equip me!
 - I have something for you....
 	[signal arg="sell_gear"]
 adventurer: Thank you!
+adventurer: Greetings, Merchant! I have returned victorious.
