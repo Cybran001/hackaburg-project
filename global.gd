@@ -6,12 +6,33 @@ var reputation_counter: int = 0
 var current_inventory: Array[Item] = parse_item_list("res://items/items_list.json")
 var available_items: Dictionary[String, Item] = _convert_item_list_to_dict(parse_item_list("res://items/items_list.json"))
 
+func resize_texture_32x32(texture: Texture2D) -> Texture2D:
+	var _texture = texture.get_image()
+	_texture.resize(32,32)
+	return ImageTexture.create_from_image(_texture)
+
+func add_item_to_itemlist(list: ItemList, item: Item):
+	# Add coin texture and resize to 32x32
+	var coin_texture := Global.resize_texture_32x32(load("res://icons/coin.png"))
+	
+	list.add_item(item.item_name, item.item_texture)
+	list.add_item(str(item.item_value), coin_texture, false)
+	
+func remove_item_from_itemlist(list: ItemList, index):
+	# Add coin texture and resize to 32x32
+	var _coin_texture = load("res://icons/coin.png").get_image()
+	_coin_texture.resize(32,32)
+	var coin_texture := ImageTexture.create_from_image(_coin_texture)
+	
+	# do it twice to remove value field as well
+	list.remove_item(index)
+	list.remove_item(index)
+
 func _convert_item_list_to_dict(items: Array[Item]) -> Dictionary[String, Item]:
 	var dict: Dictionary[String, Item] = {}
 	for item in items:
 		dict[item.item_name] = item
 	return dict
-	
 
 func parse_item_list(items_file: String) -> Array[Item]:
 	var res: Array[Item] = []

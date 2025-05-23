@@ -78,4 +78,5 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Start Game"
 
+[connection signal="item_clicked" from="InventoryList" to="InventoryList" method="_on_item_clicked"]
 [connection signal="pressed" from="Startbutton" to="." method="_on_startbutton_pressed"]
