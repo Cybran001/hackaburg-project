@@ -22,7 +22,7 @@ func _ready():
 func play_next_timeline():
 	if Global.timeline_counter % 2 == 0: # normal timeline
 		Global.fade_in(chars[Global.timeline_counter])
-	
+
 	Dialogic.start(Global.timeline_stack.pop_front())  # replace with your actual timeline name
 
 
@@ -62,7 +62,6 @@ func _on_available_items_list_item_selected(index: int) -> void:
 	Global.money_counter += selected_item.item_value
 
 
-
 func _on_selected_items_list_item_selected(index: int) -> void:
 	var selected_item_name = $SelectedItemsList.get_item_text(index)
 	var selected_item = Global.available_items[selected_item_name]
@@ -73,17 +72,25 @@ func _on_selected_items_list_item_selected(index: int) -> void:
 
 
 func _on_button_pressed() -> void:
+	
+	for i in range(2, $SelectedItemsList.item_count, 2):
+		var item_text = $SelectedItemsList.get_item_text(i)
+		var item = Global.available_items[item_text]
+		Global.current_inventory.erase(item)
+
 	$label_available_items.visible = false
 	$label_customer_items.visible = false
 	$label_sell_items.visible = false
 	$SelectedItemsList.visible = false
 	$AvailableItemsList.visible = false
 	$Button.visible = false
-	
+	Global.customer_inventory.clear()
+
+
 	$SelectedItemsList.clear()
 	$SelectedItemsList.add_item("Name", null, false)
 	$SelectedItemsList.add_item("Value", null, false)
 	
 	Global.reputation_counter += 10
-	
+
 	play_next_timeline()
