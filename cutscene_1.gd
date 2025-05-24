@@ -80,6 +80,10 @@ func _on_button_pressed() -> void:
 	$AvailableItemsList.visible = false
 	$Button.visible = false
 	
+	$SelectedItemsList.clear()
+	$SelectedItemsList.add_item("Name", null, false)
+	$SelectedItemsList.add_item("Value", null, false)
+	
 	Global.reputation_counter += 10
 	
 	play_next_timeline()
