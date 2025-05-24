@@ -15,6 +15,3 @@ adventurer: I beseech thee, armourer\: equip me!
 	adventurer: There is nothing much to know strategy-wise. I will strike it during its most vulnerable state\: in the middle of its sleep. I am sure that is not enough to kill it, but I am confident in my duelling skills in one-on-one combat against humanoid monsters. I have learned from the goblins. It will be hard, but I can do it.
 	jump question_loop
 - I have something for you....
-	[signal arg="sell_gear"]
-adventurer: Thank you!
-adventurer: Greetings, Merchant! I have returned victorious.

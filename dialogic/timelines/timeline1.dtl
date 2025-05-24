@@ -14,5 +14,3 @@ adventurer: So now, merchant. Tell me\: what do I need?
 	adventurer: Cut them. I need a simple weapon that cuts.
 	jump question_loop
 - I have something for you.... | [=""]
-	[signal arg="sell_gear"]
-adventurer: Thank you! This fight will be glorious.

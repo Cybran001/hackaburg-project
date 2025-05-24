@@ -20,5 +20,3 @@ necromancer: Can you give me something? Something to... nudge people's behaviour
 	necromancer: But people will be going rogue once they realize just how empty these promises are.
 	jump question_loop
 - I have something for you....
-	[signal arg="sell_gear"]
-necromancer: Thank you. I hope this will help

@@ -22,5 +22,3 @@ king: Give me somthing to stop the endless fight between the orc and the barbari
 	king: Or maybe I can somehow reach them with something they care about.
 	jump question_loop
 - I have something for you....
-	[signal arg="sell_gear"]
-king: Thank you. Let's hope for my people's sake that this will work.

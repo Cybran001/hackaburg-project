@@ -1,6 +1,6 @@
 adventurer: Greetings, Merchant! I have returned victorious.
 adventurer: You should have seen me, for tis was a fierce fight. But these goblins got what they deserved! For glory, for honor.
-I must ask for your service once more. You must help me, for this is only the beginning of my saga. Everyone starts humble, but I am ready for my next fight.
+adventurer: I must ask for your service once more. You must help me, for this is only the beginning of my saga. Everyone starts humble, but I am ready for my next fight.
 label question_loop
 adventurer: I beseech thee, armourer\: equip me!
 - Aaalright, what enemy?
@@ -16,5 +16,3 @@ adventurer: I beseech thee, armourer\: equip me!
 	adventurer: There is nothing much to know strategy-wise. I will strike it during its most vulnerable state\: in the middle of its sleep. I am sure that is not enough to kill it, but I am confident in my duelling skills in one-on-one combat against humanoid monsters. I have learned from the goblins. It will be hard, but I can do it.
 	jump question_loop
 - I have something for you....
-	[signal arg="sell_gear"]
-adventurer: Thank you!
