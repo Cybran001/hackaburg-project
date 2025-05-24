@@ -5,7 +5,7 @@ var reputation_counter: int = 0
 var day = 0
 var lastDay = 3
 var timeline_stack = ["timeline1", "timeline1_end", "rogue_timeline", "rogue_timeline_end", "barbarian_timeline", "barbarian_timeline_end", "adventurer_timeline2", "adventurer_timeline2_end", "necromancer_timeline", "necromancer_timeline_end", "orc_timeline", "orc_timeline_end", "adventurer_timeline3", "adventurer_timeline3_end", "king_timeline", "king_timeline_end", "cleric_timeline", "cleric_timeline_end"]
-var property_stack = [["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"]]
+var property_stack = [["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"], ["melee, damage"]]
 
 var timeline_counter = 0
 # as an example, we initialize the current_inventory with all items

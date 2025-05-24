@@ -15,6 +15,7 @@ func _ready():
 	chars = [adventurer, adventurer, rogue, rogue, barbarian, barbarian, adventurer, adventurer, necromancer, necromancer, orc, orc, adventurer, adventurer, king, king, cleric, cleric]
 	$AudioStreamPlayer.play()
 	play_next_timeline()
+	Dialogic.timeline_ended.connect(_on_timeline_end)
 	#Dialogic.start("timeline1")  # replace with your actual timeline name
 	#Dialogic.timeline_ended.connect(_on_timeline1_end)
 	
@@ -23,7 +24,6 @@ func play_next_timeline():
 		Global.fade_in(chars[Global.timeline_counter])
 	
 	Dialogic.start(Global.timeline_stack.pop_front())  # replace with your actual timeline name
-	Dialogic.timeline_ended.connect(_on_timeline_end)
 
 
 func _on_timeline_end():
