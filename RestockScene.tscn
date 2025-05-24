@@ -1,0 +1,145 @@
+[gd_scene load_steps=8 format=3 uid="uid://r2lhkj6ptww8"]
+
+[ext_resource type="Script" uid="uid://dfjvb1hpw1qh6" path="res://restock_scene.gd" id="1_7s2fj"]
+[ext_resource type="Texture2D" uid="uid://8kgmokep8715" path="res://placeholder/background.png" id="1_ehsa5"]
+[ext_resource type="Texture2D" uid="uid://bjbrgaxkls50b" path="res://placeholder/counter_big.png" id="2_5bvj6"]
+[ext_resource type="Script" uid="uid://cew7vi3upe52" path="res://restock_available_item_list.gd" id="4_7s2fj"]
+[ext_resource type="Script" uid="uid://b8hym6ix1furh" path="res://restock_selected_items_list.gd" id="5_w3o4g"]
+[ext_resource type="AudioStream" uid="uid://cut0mpydhik1j" path="res://music/gwent_ost.mp3" id="6_8v0fd"]
+[ext_resource type="FontFile" uid="uid://vkt2hpimy12h" path="res://fonts/Seagram tfb.ttf" id="7_ooljo"]
+
+[node name="RestockScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7s2fj")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ehsa5")
+expand_mode = 2
+
+[node name="Counter" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5bvj6")
+expand_mode = 2
+
+[node name="AvailableItemsList" type="ItemList" parent="."]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 1
+offset_left = 490.0
+offset_top = 465.0
+offset_right = 790.0
+offset_bottom = 615.0
+auto_width = true
+auto_height = true
+max_columns = 2
+same_column_width = true
+fixed_column_width = 150
+script = ExtResource("4_7s2fj")
+
+[node name="SelectedItemsList" type="ItemList" parent="."]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 1
+offset_left = 1130.0
+offset_top = 465.0
+offset_right = 1430.0
+offset_bottom = 615.0
+auto_width = true
+auto_height = true
+max_columns = 2
+same_column_width = true
+fixed_column_width = 150
+script = ExtResource("5_w3o4g")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.5
+offset_top = -27.5
+offset_right = 76.5
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Submit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_8v0fd")
+
+[node name="label_restock_your_shop" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -516.0
+offset_top = -498.0
+offset_right = 518.0
+offset_bottom = -434.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ooljo")
+theme_override_font_sizes/font_size = 50
+text = "Restock your shop to fullfill the adventurers needs"
+
+[node name="label_your_items" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 248.0
+offset_top = -121.0
+offset_right = 392.0
+offset_bottom = -82.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ooljo")
+theme_override_font_sizes/font_size = 30
+text = "Your Items"
+
+[node name="label_available_items" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -428.5
+offset_top = -125.0
+offset_right = -229.5
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ooljo")
+theme_override_font_sizes/font_size = 30
+text = "Available Items"
+
+[connection signal="item_selected" from="AvailableItemsList" to="." method="_on_available_items_list_item_selected"]
+[connection signal="item_selected" from="SelectedItemsList" to="." method="_on_selected_items_list_item_selected"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

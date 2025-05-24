@@ -1,0 +1,24 @@
+rogue: ...
+rogue: PSSShHH, Pssh, pshsshshhhhh... Don't let them hear you. You're waaay too loud, okay? No one can know I am here, okay? I need you to be professional.
+label question_loop
+rogue: I need you to get me some equipment, okay? I don't have a lot of time.
+rogue: You have something that's effective against holy magic? You know, the kind that these fanatics channel through their godly entity and their prayers.
+I need something that - theoretically - nullifies holy magic. That makes one undetectable under the eyes of god. Just... don't ask.
+Just... just give me something. Discreetly. Make it quick!
+- Aaalright, what enemy?
+	rogue: Ideally\: no enemy. No one should know. Probably not even you.
+	rogue: But if I had to name one, I'd say the holy entity himself. I need to be invisible.
+	God may judge me, but his sins outnumber my own.
+	jump question_loop
+- What environment?
+	rogue: You know this monastery up north. Lately, there's been a special glow. People have come out there, feeling... different. I think there's something going on. I know it.
+	rogue: Word is in the town that it has all started ever since they found a special artifact. Let's just say I would like to do some investigation.
+	jump question_loop
+- What's your strategy?
+	rogue: I usually rely on intuition. And that intuition is\: the fewer people see me, the better. If must be, I am a good actor, so camouflage is not out of the question.
+	rogue: I may not have the highest morals, but if must be, I would like to avoid any spilled blood. I don't particularly count monchs and paladins as my closest friends, but I'd hate to see them hurt unnecessarily. Their suffering is not my goal.
+	jump question_loop
+- I have something for you....
+	[signal arg="sell_gear"]
+rogue: Took you long enough. And if you ever tell a single soul about this, trust me\: I will know. And you'd do better to sleep with someone to watch over you if that were the case.
+rogue: ... Thank you.

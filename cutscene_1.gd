@@ -1,18 +1,82 @@
 extends Control
 
-@onready var char1 = $Alice
-#@onready var char2 = $Character2
+@onready var adventurer = $Adventurer
+@onready var rogue = $Rogue
+@onready var barbarian = $Barbarian
+@onready var necromancer = $Necromancer
+@onready var orc = $Orc
+@onready var king = $King
+@onready var cleric = $Cleric
+
+var chars = []
+
 
 func _ready():
-	fade_in_character(char1)
-	Dialogic.start("timeline1")  # replace with your actual timeline name
-	Dialogic.timeline_ended.connect(_on_timeline1_end)
+	chars = [adventurer, rogue, barbarian, adventurer, necromancer, orc, adventurer, king, cleric]
+	$AudioStreamPlayer.play()
+	Dialogic.signal_event.connect(_on_dialogic_signal_event)
+	play_next_timeline()
+	#Dialogic.start("timeline1")  # replace with your actual timeline name
+	#Dialogic.timeline_ended.connect(_on_timeline1_end)
+	
+func play_next_timeline():
+	Global.fade_in(chars[Global.timeline_counter])
+	Dialogic.start(Global.timeline_stack.pop_front())  # replace with your actual timeline name
 
-func fade_in_character(character):
-	var tween = create_tween()
-	tween.tween_property(character, "modulate:a", 1.0, 1.5)
+	Dialogic.timeline_ended.connect(_on_timeline_end)
 
-func _on_timeline1_end(_timeline_name):
-	#fade_in_character(char2)
-	pass
-	#Dialogic.start("Timeline2")  # replace with your actual second timeline
+
+func _on_timeline_end():
+	await Global.fade_out(chars[Global.timeline_counter]).finished
+	# todo start next timeline here
+	Global.timeline_counter += 1
+	var target_properties = Global.property_stack.pop_front()
+	print(target_properties)
+	# if day has ended:
+	#if Global.day == Global.lastDay:
+	if Global.day == Global.lastDay && (Global.timeline_counter%3) == 0:
+		get_tree().change_scene_to_file("res://Endscreen.tscn")
+	elif (Global.timeline_counter%3) == 0:
+		get_tree().change_scene_to_file("res://DayX.tscn")
+	else:
+		play_next_timeline()
+
+func _on_dialogic_signal_event(signal_name: String):
+	match signal_name:
+		"sell_gear":
+			Dialogic.paused = true
+
+			$label_available_items.visible = true
+			$label_customer_items.visible = true
+			$label_sell_items.visible = true
+			$SelectedItemsList.visible = true
+			$AvailableItemsList.visible = true
+			$Button.visible = true
+
+			print("Selling gear...")
+			# todo sell stuff here
+			print("Sold gear!!!")
+
+
+func _on_available_items_list_item_selected(index: int) -> void:
+	var selected_item_name = $AvailableItemsList.get_item_text(index)
+	var selected_item = Global.available_items[selected_item_name]
+
+	Global.remove_item_from_itemlist($AvailableItemsList, index)
+	Global.add_item_to_itemlist($SelectedItemsList, selected_item)
+
+	Global.money_counter += selected_item.item_value
+
+
+
+func _on_selected_items_list_item_selected(index: int) -> void:
+	var selected_item_name = $SelectedItemsList.get_item_text(index)
+	var selected_item = Global.available_items[selected_item_name]
+
+	Global.remove_item_from_itemlist($SelectedItemsList, index)
+	Global.add_item_to_itemlist($AvailableItemsList, selected_item)
+	Global.money_counter -= selected_item.item_value
+
+
+func _on_button_pressed() -> void:
+	Dialogic.paused = false

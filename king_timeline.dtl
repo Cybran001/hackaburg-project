@@ -1,0 +1,26 @@
+king: Hello, merchant.
+king: You're the one who sold the weapons and armory to a barbarian and the former orc chief, I take it?
+king: People say the gear is yours. I am coming to you in  a time on need.
+king: These two... they have been locked in combat for hours. They will not wear out, both equally matched. None of them have taken significant harm and their endurance is formidable.
+king: I wish I could say the same for their surroundings. In their unrelenting fight, they are destroying everything that comes in their way.
+king: The thing is, they are quite mobile with their fight, so nearly everything IS in their way. No people have come to harm yet, but I cannot say the same thing for their homes and belongings.
+king: The people have come to me to seek for my aid. And I cannot ignore a call of my people in need.
+king: I sent my best knights, my strongest warriors, but they get swept in the quarrel and pushed out of it, like as effective as a leaf in the wind. We are lucky they are emerging unharmed, but no one can stop the carnage.
+king: In times like these, a leader must step in on their own. I am still in my prime and I have studied the blade for decades. I need your armor to solve the conflict myself.
+label question_loop
+king: Give me somthing to stop the endless fight between the orc and the barbarian.
+- What do you want to do?
+	king: I need to end this fight.
+	king: It's certainly no easy feat, but if it can be done, I am sure you are the key to it.
+	king: I need to somehow disrupt their trance, to pull them back into reality. Maybe apeal to both of their senses of responsibilitiy. But I am not sure how to get through both of their thickheads without damaging their 'honor', which is supposedly what this madness is all about.
+	jump question_loop
+- What environment?
+	king: Any environment that I can catch them in. They fight everywhere\: mountains, villages, towns, forests, in the water.
+	jump question_loop
+- What's your strategy?
+	king: Match them both in some way. Maybe subdue them?
+	king: Or maybe I can somehow reach them with something they care about.
+	jump question_loop
+- I have something for you....
+	[signal arg="sell_gear"]
+king: Thank you. Let's hope for my people's sake that this will work.

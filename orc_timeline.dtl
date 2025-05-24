@@ -1,0 +1,26 @@
+barbarian: OY.
+barbarian: Worm!
+barbarian: There was some human here the other day. He challenged me.
+barbarian: Do not play dumb with me. I know he passed through here before.
+barbarian: He fought me. With YOUR weapon. I recognize the signature.
+He bought me to a pulp. I have seen him before, I cannot believe it. It must be your weapon.
+I want revenge. I need revenge. Otherwise, my village will cast me out. Give me something to beat him. I know you know him.
+label question_loop
+barbarian: Give me something to beat the barbaric, before I take my revenge out on you instead.
+- Who do you want to fight?
+	barbarian: Do NOT play dumb.
+	barbarian: You know them. You sold them your gear.
+	barbarian: Now do the same for me.
+	jump question_loop
+- What environment?
+	barbarian: The fighting pit in my village.
+	barbarian: .... if they let me back in, that is...
+	jump question_loop
+- What's your strategy?
+	barbarian: I need to use my smarts.
+	barbarian: I used to believe strenght is a thing of the body, the muscle.
+	orc: But now I believe, it is a matter of the mind, as well. I need to use my smarts, but I don't know how.
+	jump question_loop
+- I have something for you....
+	[signal arg="sell_gear"]
+barbarian: Thank you, you little twerp! If you still live tomorrow, you will know it worked.

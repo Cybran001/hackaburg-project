@@ -1,0 +1,20 @@
+adventurer: You should have seen me, for tis was a fierce fight. But these goblins got what they deserved! For glory, for honor.
+I must ask for your service once more. You must help me, for this is only the beginning of my saga. Everyone starts humble, but I am ready for my next fight.
+label question_loop
+adventurer: I beseech thee, armourer\: equip me!
+- Aaalright, what enemy?
+	adventurer: You haven't noticed the creeping cold? Temperatures have been sinking, even though we are in mid summer season.
+	adventurer: There has been a sighting of a Yeti. It's on the march on this village. The crops are freezing, the people are in fear. This is the perfect opportunity.
+	adventurer: I need to slay this Yeti. I can save the crops, can save this harvest, can save the people. This is bigger than my honor. But still mostly about my honor... I can slay the Yeti, but I cannot do it like this. This blade will not cut through Yeti skin.
+	jump question_loop
+- What environment?
+	adventurer: I have asked around and the people. They have sighted it in a nearby cave. I will challenge it at midnight during its sleep before it can advance further.
+	adventurer: It is bound to be freezing in there.
+	jump question_loop
+- What's your strategy?
+	adventurer: There is nothing much to know strategy-wise. I will strike it during its most vulnerable state\: in the middle of its sleep. I am sure that is not enough to kill it, but I am confident in my duelling skills in one-on-one combat against humanoid monsters. I have learned from the goblins. It will be hard, but I can do it.
+	jump question_loop
+- I have something for you....
+	[signal arg="sell_gear"]
+adventurer: Thank you!
+adventurer: Greetings, Merchant! I have returned victorious.

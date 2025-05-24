@@ -1,0 +1,86 @@
+[
+	{
+		"Name": "Axe",
+		"Texture": "axe.png",
+		"Value": 5,
+		"Properties": [
+			"heavy",
+			"melee",
+			"damage"
+		]
+	},
+	{
+		"Name": "Health Potion",
+		"Texture": "red-potion.png",
+		"Value": 8,
+		"Properties": [
+			"health",
+			"magic"
+		]
+	},
+	{
+		"Name": "Mana Potion",
+		"Texture": "blue-potion.png",
+		"Value": 5,
+		"Properties": [
+			"mana",
+			"magic"
+		]
+	},
+	{
+		"Name": "Stamina Potion",
+		"Texture": "green-potion.png",
+		"Value": 7,
+		"Properties": [
+			"stamina",
+			"magic"
+		]
+	},
+	{
+		"Name": "Sword",
+		"Texture": "sword.png",
+		"Value": 10,
+		"Properties": [
+			"melee",
+			"damage"
+		]
+	},
+	{
+		"Name": "Bow",
+		"Texture": "bow.png",
+		"Value": 12,
+		"Properties": [
+			"ranged",
+			"damage",
+			"silent"
+		]
+	},
+	{
+		"Name": "Shield",
+		"Texture": "shield.png",
+		"Value": 6,
+		"Properties": [
+			"heavy",
+			"defense"
+		]
+	},
+	{
+		"Name": "Poison",
+		"Texture": "purple-potion.png",
+		"Value": 2,
+		"Properties": [
+			"damage",
+			"magic"
+		]
+	},
+	{
+		"Name": "Spellbook",
+		"Texture": "spellbook.png",
+		"Value": 10,
+		"Properties": [
+			"ranged",
+			"magic",
+			"damage"
+		]
+	}
+]

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Godot-Test"
+config/name="Gear4Fear"
 run/main_scene="uid://dxf5g8f20kxp2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
@@ -18,13 +18,61 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+Global="*res://global.gd"
+Counter="*res://Counter.tscn"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"adventurer": "res://dialogic/timelines/dialogic_theme/adventurer.dch",
+"barbarian": "res://barbarian.dch",
+"cleric": "res://cleric.dch",
+"king": "res://king.dch",
+"necromancer": "res://necromancer.dch",
+"orc": "res://orc.dch",
+"rogue": "res://dialogic/timelines/dialogic_theme/rogue.dch"
+}
 directories/dtl_directory={
+"adventurer_timeline2": "res://adventurer_timeline2.dtl",
+"adventurer_timeline3": "res://adventurer_timeline3.dtl",
+"barbarian_timeline": "res://barbarian_timeline.dtl",
+"cleric_timeline": "res://cleric_timeline.dtl",
+"king_timeline": "res://king_timeline.dtl",
+"necromancer_timeline": "res://necromancer_timeline.dtl",
+"orc_timeline": "res://orc_timeline.dtl",
+"rogue_timeline": "res://dialogic/timelines/dialogic_theme/rogue_timeline.dtl",
 "timeline1": "res://dialogic/timelines/timeline1.dtl"
 }
+variables={}
+layout/style_list=[]
+layout/default_style="Default"
+glossary/default_case_sensitive=true
+extensions_folder="res://addons/dialogic_additions"
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+audio/max_channels=4.0
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+text/autopauses={}
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=2
 
 [editor_plugins]
 
