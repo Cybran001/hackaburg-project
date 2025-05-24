@@ -23,7 +23,7 @@ func add_item_to_itemlist(list: ItemList, item: Item):
 	var coin_texture := Global.resize_texture_32x32(load("res://icons/coin.png"))
 	
 	list.add_item(item.item_name, item.item_texture)
-	list.add_item(str(item.item_value), coin_texture, false)
+	list.add_item(str(item.item_value), coin_texture)
 	
 func remove_item_from_itemlist(list: ItemList, index):
 	# do it twice to remove value field as well

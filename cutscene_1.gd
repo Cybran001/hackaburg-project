@@ -53,6 +53,9 @@ func _on_timeline_end():
 
 
 func _on_available_items_list_item_selected(index: int) -> void:
+	if index % 2 == 1:
+		index -= 1
+	
 	var selected_item_name = $AvailableItemsList.get_item_text(index)
 	var selected_item = Global.available_items[selected_item_name]
 
@@ -63,6 +66,9 @@ func _on_available_items_list_item_selected(index: int) -> void:
 
 
 func _on_selected_items_list_item_selected(index: int) -> void:
+	if index % 2 == 1:
+		index -= 1
+	
 	var selected_item_name = $SelectedItemsList.get_item_text(index)
 	var selected_item = Global.available_items[selected_item_name]
 
