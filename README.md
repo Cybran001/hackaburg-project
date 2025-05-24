@@ -1,6 +1,6 @@
 ## Inspiration
 We came here with the idea to build a game.
-Continental's pitch (keeping people safe on their way/travel), together with the theme of this years' hackaburg, inspired our game idea.
+Continental's pitch (keeping people safe on their way/travel), together with the theme of this years' hackaburg and our planned fantasy setting, inspired our game idea.
 
 ## What it does
 You play as a merchant who arms adventurers and warriors.
